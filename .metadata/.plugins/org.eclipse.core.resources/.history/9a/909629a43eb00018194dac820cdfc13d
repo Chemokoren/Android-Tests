@@ -1,0 +1,12 @@
+package com.kibet.order.bo;
+
+import junit.framework.TestCase;
+
+public class OrderBOImplTest extends TestCase {
+	
+	@Test
+	public void placeOrder_Should_Return(){
+	fail("Not yet implemented");
+	}
+
+}

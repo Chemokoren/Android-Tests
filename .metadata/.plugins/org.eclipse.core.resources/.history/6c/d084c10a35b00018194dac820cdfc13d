@@ -1,0 +1,23 @@
+package com.kibet.order.bo;
+
+import com.kibet.order.bo.exception.BOException;
+import com.kibet.order.dto.Order;
+
+public class OrderBOImpl implements OrderBO {
+
+	public boolean placeOrder(Order order) throws BOException {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public boolean cancelOrder(int id) throws BOException {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public boolean deleteOrder(int id) throws BOException {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

@@ -1,0 +1,6 @@
+1536054351106	Delete element
+1536054494441	Encapsulate field 'id'
+1536054500518	Encapsulate field 'status'
+1536060176068	Encapsulate field 'dao'
+1536066594330	Convert local variable 'bo' to field
+1536112862787	Extract constant '_123'

@@ -1,0 +1,5 @@
+package com.kibet.trainings.junit;
+
+public class GreetingImpl {
+
+}

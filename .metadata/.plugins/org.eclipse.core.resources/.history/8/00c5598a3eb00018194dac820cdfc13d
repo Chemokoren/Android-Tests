@@ -1,0 +1,7 @@
+package com.kibet.order.bo;
+
+import junit.framework.TestCase;
+
+public class OrderBOImplTest extends TestCase {
+
+}
