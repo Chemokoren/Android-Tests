@@ -28,6 +28,30 @@ public class OrderBOImplTest {
 		bo = new OrderBOImpl();
 		bo.setDao(dao);
 	}
+	
+	@Test
+	public void placeOrder_Should_Create_An_Order() throws SQLException, BOException{
+	Order order =new Order();
+//	when(dao.create(order)).thenReturn(new Integer(1));
+	when(dao.create(any(Order.class))).thenReturn(new Integer(1));
+	boolean result =bo.placeOrder(order);
+
+	assertTrue(result);
+	verify(dao,atLeast(1)).create(order);
+//	verify(dao,times(1)).create(order);
+	}
+	
+	@Test
+	public void placeOrder_Should_not_Create_An_Order() throws SQLException, BOException{
+
+	Order order =new Order();
+	when(dao.create(order)).thenReturn(new Integer(0));
+	boolean result =bo.placeOrder(order);
+
+	assertFalse(result);
+	verify(dao).create(order);
+	}
+	
 
 	@Test
 	public void placeOrder_Should_Return() throws SQLException, BOException {
@@ -67,7 +91,8 @@ public class OrderBOImplTest {
 	public void cancelOrder_Should_Cancel_The_Order() throws SQLException,
 			BOException {
 		Order order = new Order();
-		when(dao.read(ORDER_ID)).thenReturn(order);
+//		when(dao.read(ORDER_ID)).thenReturn(order);
+		when(dao.read(anyInt())).thenReturn(order);
 		when(dao.update(order)).thenReturn(1);
 		boolean result = bo.cancelOrder(ORDER_ID);
 
