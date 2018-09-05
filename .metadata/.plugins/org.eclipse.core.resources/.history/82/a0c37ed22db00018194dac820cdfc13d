@@ -1,0 +1,5 @@
+package com.kibet.order.bo;
+
+public interface OrderBO {
+
+}

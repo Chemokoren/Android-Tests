@@ -1,0 +1,22 @@
+package com.kibet.order.bo;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+import org.mockito.Mock;
+
+import com.kibet.order.dao.OrderDAO;
+
+
+public class OrderBOImplTest {
+	
+	@Mock
+	OrderDAO dao;
+	
+	@Test
+	public void placeOrder_Should_Return(){
+		OrderBOImpl bo =new OrderBOImpl();
+		bo.setDao(dao);
+	}
+
+}

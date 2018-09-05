@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="OrderProcessingService" project="OrderProcessingService" tests="7" started="7" failures="0" errors="0" ignored="0">
+  <testsuite name="com.kibet.order.bo.OrderBOImplTest" time="0.632">
+    <testcase name="cancelOrder_Should_Throw_A_BOExceptionOnUpdate" classname="com.kibet.order.bo.OrderBOImplTest" time="0.6"/>
+    <testcase name="placeOrder_Should_not_Return" classname="com.kibet.order.bo.OrderBOImplTest" time="0.015"/>
+    <testcase name="placeOrder_Should_Throw_BOException" classname="com.kibet.order.bo.OrderBOImplTest" time="0.002"/>
+    <testcase name="cancelOrder_ShouldThrowABOExceptionOnRead" classname="com.kibet.order.bo.OrderBOImplTest" time="0.002"/>
+    <testcase name="placeOrder_Should_Return" classname="com.kibet.order.bo.OrderBOImplTest" time="0.001"/>
+    <testcase name="cancelOrder_Should_NOT_Cancel_The_Order" classname="com.kibet.order.bo.OrderBOImplTest" time="0.003"/>
+    <testcase name="cancelOrder_Should_Cancel_The_Order" classname="com.kibet.order.bo.OrderBOImplTest" time="0.006"/>
+  </testsuite>
+</testrun>

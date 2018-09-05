@@ -1,0 +1,7 @@
+package com.kibet.trainings.junit;
+
+import junit.framework.TestCase;
+
+public class GreetingImplTest extends TestCase {
+
+}

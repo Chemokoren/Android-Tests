@@ -1,0 +1,15 @@
+package com.kibet.order.bo;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+
+public class OrderBOImplTest {
+	
+	@Test
+	public void placeOrder_Should_Return(){
+	fail("Not yet implemented");
+	}
+
+}

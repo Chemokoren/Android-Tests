@@ -1,0 +1,16 @@
+package com.kibet.trainings.junit;
+
+import org.junit.Test;
+
+import junit.framework.TestCase;
+
+public class GreetingImplTest extends TestCase {
+
+	@Test
+	public  void greetShouldReturnAValidOutput(){
+		Greeting greeting =new GreetingImpl();
+		String result = greeting.greet("Junit");
+		assertNotNull(result);
+		assertEquals("Junit", result);
+	}
+}
